@@ -1,11 +1,9 @@
 .App {
   text-align: center;
+  background-color: beige;
+  color: chocolate;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
@@ -35,4 +33,35 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+section {
+  display: grid;
+  grid-gap: 0.5rem;
+  padding: 1rem;
+}
+
+article {
+  text-align: left;
+  background-color: antiquewhite;
+  color:darkorange;
+
+}
+
+.title {
+  margin-left: 1rem;
+}
+
+@media (min-width: 600px) {
+  section {
+    grid-template-columns: auto auto;
+  }
+  
+}
+
+@media (min-width: 768px) {
+  section {
+    grid-template-columns: auto auto auto;
+  }
+  
 }
